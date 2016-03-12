@@ -49,18 +49,18 @@ table {
 
 /* Elisabeth Long, longem */
 body {
-    background-color: #236167;
+    background-color: #7f5200;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     position: relative;
-    color: #4CAAB3;
+    color: #ffa500;
 }
 em {
     font-style: italic;
 }
 h1, strong {
     font-weight:bold;
-    color: #CBF4F8;
+    color: #ffa500;
 }
 a {
     color: #67979B;
@@ -69,7 +69,8 @@ a {
 
 nav {
     padding: 1% 0%;
-    background-color: #767676;
+    background-color: #00000;
+    text-align: center;
 }
 nav .login_bar {
     right: 0px;
@@ -83,22 +84,21 @@ nav ul li, footer ul li {
     font-size: 16px;
     color: #4CAAB3;
 }
-nav a {
-    color: #000000;
-}
 
 header {
     padding: 1%;
     background-color: #000304;
+    text-align: center;
 }
 header h1 {
     margin: 0% 3%;
     font-size: 60px;
 }
 header p {
-    color: #4CAAB3;
+    color: #ffd27f;
     margin: 0% 3%;
     font-size: 40px;
+    text-align: center;
 }
 
 main, article {
