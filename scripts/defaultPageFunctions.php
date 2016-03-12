@@ -33,17 +33,11 @@
             print '<nav class="login_bar"><ul>';
             
             if (empty($_SESSION['username'])) {
-                print '<li><a href="createNewAccount.php">Create Account</a></li><li><a href="login.php">Login</a></li>';
+                print '<li><a href="createNewAccount.php">Create Account</a></li>';
+                print '<li><a href="login.php">Login</a></li>';
             }
             else if (!empty($_SESSION['username'])) {
                 print "<li>Welcome ".$_SESSION['username']."!</li>";
-                if ($_SESSION['isStaff'] == true) {
-                    print '<li><a href="createNewAccount.php">Create New Staff Account</a></li>';
-                    print '<li><a href="view_adoptions.php">View All Adoption Requests</a></li>';
-                }
-                else if ($_SESSION['isStaff'] == false) {
-                    print '<li><a href="view_adoptions.php">View Your Adoptions</a></li>';
-                }
                 print '<li><a href="logout.php">Logout</a></li>';
             }
             
@@ -61,7 +55,6 @@
             print '<nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="view_animals.php">View Animals</a></li>
                 <li><a href="about.php">About</a></li>
             </ul>
         </nav>';
