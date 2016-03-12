@@ -1,3 +1,4 @@
+<!-- Author: Elisabeth Long -->
 <?php
     require 'scripts/sessionFunctions.php';
     session_start();
@@ -12,8 +13,8 @@
     $password = "";
         
     if (isset($_POST["submitted"])) {
-        $username = process_user_inputted_text($_POST["username"]);
-        $password = process_user_inputted_text($_POST["password"]);
+        $username = processUserInputtedText($_POST["username"]);
+        $password = processUserInputtedText($_POST["password"]);
         
         if (empty($password)) {
             $formErr = $unenteredPasswordField;            
@@ -27,7 +28,7 @@
                 
         if ($errorFound == false) {
             if (checkDetails($username, $password) == true) {
-                create_login_session($username);
+                createLoginSession($username);
                 redirect("index.php");
             }
             else {

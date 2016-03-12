@@ -1,14 +1,17 @@
+<!-- Author: Elisabeth Long -->
 <?php
     class PageDetails {
-        public $title;
+        private $title;
+        private $siteTitle;
         
         function __construct($title) {
             $this->title = $title;
+            $this->siteTitle = "Twisted Vanilla";
         }
         
         function set_default_head() {
             $this->set_default_page_title();
-            $this->set_default_stylesheet();
+            $this->set_default_stylsheet();
         }
         
         function create_default_body_top() {
@@ -21,12 +24,12 @@
             $this->create_default_footer();
         }
         
-        function set_default_stylesheet() {
+        function set_default_stylsheet() {
             print '<link type="text/css" rel=stylesheet href="stylesheets/stylesheet.css"/>';
         }
         
         function set_default_page_title() {
-            print '<title>'.$this->title.': </title>';
+            print '<title>'.$this->title.': '.$this->siteTitle.'</title>';
         }
         
         function create_login_bar() {
@@ -55,6 +58,8 @@
             print '<nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="plugins.php">Plugins</a></li>
                 <li><a href="about.php">About</a></li>
             </ul>
         </nav>';

@@ -1,7 +1,8 @@
+<!-- Author: Elisabeth Long -->
 <?php
     require 'accountFunctions.php';
 
-    function create_login_session($username) {
+    function createLoginSession($username) {
         $_SESSION['username'] = $username;
         $rows = getExistingUserDetails($username);
         foreach ($rows as $row) {
@@ -9,7 +10,7 @@
         }
     }
 
-    function close_login_session() {
+    function closeLoginSession() {
         session_unset();
         session_destroy();
     }

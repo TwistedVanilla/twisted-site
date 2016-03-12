@@ -4,7 +4,7 @@
     <head>
         <?php
             require_once 'scripts/defaultPageFunctions.php';
-            $page_details = new PageDetails("");
+            $page_details = new PageDetails("Welcome");
             $page_details->set_default_head();
         ?>
     </head>

@@ -4,13 +4,13 @@
         die();
     }
         
-    function process_user_inputted_text($text) {
+    function processUserInputtedText($text) {
         $text = trim($text);
         $text = htmlspecialchars($text);
         return $text;
     }
 
-    function print_exception_message($ex) {
+    function printExceptionMessage($ex) {
         $message = $ex->getMessage();
         echo "<p>Uh oh - a pesky error has got through the cracks!</p>";
         echo "<p>More details on said pesky error: $message";
@@ -24,7 +24,7 @@
             return $rows;
         }
         catch (PDOException $ex) {
-            print_exception_message($ex);
+            printExceptionMessage($ex);
         }
     }
         
@@ -50,7 +50,7 @@
             return true;
         }
         catch (PDOException $ex) {
-            print_exception_message($ex);
+            printExceptionMessage($ex);
         }
         return false;
     }
