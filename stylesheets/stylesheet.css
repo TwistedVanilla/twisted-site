@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Elisabeth Long, longem */
+body {
+    background-color: #236167;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    position: relative;
+    color: #4CAAB3;
+}
+em {
+    font-style: italic;
+}
+h1, strong {
+    font-weight:bold;
+    color: #CBF4F8;
+}
+a {
+    color: #67979B;
+    text-decoration: none;
+}
+
+nav {
+    padding: 1% 0%;
+    background-color: #767676;
+}
+nav .login_bar {
+    right: 0px;
+}
+nav ul {
+    margin: 0% 5%;   
+}
+nav ul li, footer ul li {
+    padding: 0% 1%;
+    display: inline-block;
+    font-size: 16px;
+    color: #4CAAB3;
+}
+nav a {
+    color: #000000;
+}
+
+header {
+    padding: 1%;
+    background-color: #000304;
+}
+header h1 {
+    margin: 0% 3%;
+    font-size: 60px;
+}
+header p {
+    color: #4CAAB3;
+    margin: 0% 3%;
+    font-size: 40px;
+}
+
+main, article {
+    margin: 0% 5%;
+    padding-top: 2%;
+}
+article h1 {
+    padding-top: 3%;
+    font-size: 24px;
+}
+main p, article p {
+    padding-top: 1%;
+    margin: 0% 2%;
+}
+
+main h1 {
+    font-size: 30px;
+}
+main p {
+    font-size: 18px;
+    margin: 0% 2%;
+}
+
+aside {
+    background-color: black;
+    margin: 2% 5%;
+    float: right;
+    width: 100px;
+}
+aside h1 {
+    margin: 5%, 0%;
+}
+
+footer {
+    clear: both;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 2%;
+    text-align: center;
+    background-color: #000000;
+}
+
+form {
+    width: 10%;
+    padding: 2%;
+}
+form label {
+    float: left;
+    padding: 2%;
+}
+form label .err {
+    color: chocolate;
+}
