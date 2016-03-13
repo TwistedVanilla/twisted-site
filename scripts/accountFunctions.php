@@ -1,4 +1,5 @@
 <?php
+    /* Authors: TwistedVanilla */
     function redirect($url) {
         header("Location: $url");
         die();
@@ -66,21 +67,15 @@
             $validUsername = false;
             $validPassword = false;
             
-            echo $row['username'];
-            echo $row['password'];
-            
             if (strcmp($row['username'], $username) == 0) {
                 $validUsername = true;
-                echo "ReachedUser";
             }
             
             if (strcmp($row['password'], $password) == 0) {
                 $validPassword = true;
-                echo "ReachedPassword";
             }
                 
             if ($validUsername && $validPassword) {
-                echo "Reached";
                 return true;
             }
             

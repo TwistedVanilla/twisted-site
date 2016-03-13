@@ -1,4 +1,5 @@
 <?php
+    /* Authors: TwistedVanilla */
         
     require 'scripts/sessionFunctions.php';
     session_start();
@@ -20,9 +21,9 @@
         
     if (isset($_POST["submitted"])) {
         
-        $username = process_user_inputted_text($_POST["username"]);
-        $password1 = process_user_inputted_text($_POST["password1"]);
-        $password2 = process_user_inputted_text($_POST["password2"]);
+        $username = processUserInputtedText($_POST["username"]);
+        $password1 = processUserInputtedText($_POST["password1"]);
+        $password2 = processUserInputtedText($_POST["password2"]);
                 
         if (!empty($username) && usernameExists($username)) {
             $errorFound = true;
@@ -44,7 +45,7 @@
         
         if ($errorFound == false) {
             if (postNewUserDetails($username, $password1)) {
-                create_login_session($username);
+                createLoginSession($username);
                 redirect("index.php");
             }
         }
@@ -56,15 +57,13 @@
     <head>
         <?php
             require_once 'scripts/defaultPageFunctions.php';
-            if ($staff) {
-                $page_details = new PageDetails("Create Staff Account");
-            }
-            $page_details->setDefaultHead();
+            $pageDetails = new PageDetails("Create Staff Account");
+            $pageDetails->setDefaultHead();
         ?>
     </head>
     <body>
         <?php 
-            $page_details->createDefaultBodyTop();
+            $pageDetails->createDefaultBodyTop();
         ?>
         
         <section>
@@ -81,7 +80,7 @@
         </section>
         
         <?php
-            $page_details->createDefaultBodyBottom();
+            $pageDetails->createDefaultBodyBottom();
         ?>
     </body>
 </html>

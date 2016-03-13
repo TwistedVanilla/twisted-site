@@ -4,17 +4,17 @@
     <head>
         <?php
             require_once 'scripts/defaultPageFunctions.php';
-            $page_details = new PageDetails("Edit Blog Page");
-            $page_details->setDefaultHead();
+            $pageDetails = new PageDetails("Edit Blog Page");
+            $pageDetails->setDefaultHead();
         ?>
     </head>
     <body>
         <?php
-            $page_details->createDefaultBodyTop();
+            $pageDetails->createDefaultBodyTop();
         ?>
         
         <?php
-            $page_details->createDefaultBodyBottom();
+            $pageDetails->createDefaultBodyBottom();
         ?>
     </body>
 </html>

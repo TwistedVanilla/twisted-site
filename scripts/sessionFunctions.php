@@ -3,10 +3,6 @@
 
     function createLoginSession($username) {
         $_SESSION['username'] = $username;
-        $rows = getExistingUserDetails($username);
-        foreach ($rows as $row) {
-            $_SESSION['isStaff'] = $row['staff'];
-        }
     }
 
     function closeLoginSession() {

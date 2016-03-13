@@ -4,16 +4,16 @@
     <head>
         <?php
             require_once 'scripts/defaultPageFunctions.php';
-            $page_details = new PageDetails("Blog Post Editor");
-            $page_details->setDefaultHead();
+            $pageDetails = new PageDetails("Blog Post Editor");
+            $pageDetails->setDefaultHead();
         ?>
     </head>
     <body>
         <?php
-            $page_details->createDefaultBodyTop();
+            $pageDetails->createDefaultBodyTop();
         ?>
         <?php
-            $page_details->createDefaultBodyBottom();
+            $pageDetails->createDefaultBodyBottom();
         ?>
     </body>
 </html>

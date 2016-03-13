@@ -4,14 +4,14 @@
     <head>
         <?php
             require_once 'scripts/defaultPageFunctions.php';
-            $page_details = new PageDetails("Plugins");
-            $page_details->setDefaultHead();
+            $pageDetails = new PageDetails("Plugins");
+            $pageDetails->setDefaultHead();
         ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <?php
-            $page_details->createDefaultBodyTop();
+            $pageDetails->createDefaultBodyTop();
         ?>
                 <main>
             <h1>Plugin Development</h1>
@@ -36,7 +36,7 @@
             </section>
         </section>
         <?php
-            $page_details->createDefaultBodyBottom();
+            $pageDetails->createDefaultBodyBottom();
         ?>
     </body>
 </html>

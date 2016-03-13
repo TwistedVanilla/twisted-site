@@ -1,5 +1,5 @@
-<!-- Author: Elisabeth Long -->
 <?php
+    /* Authors: TwistedVanilla */
     class PageDetails {
         private $title;
         private $siteTitle;
@@ -48,7 +48,6 @@
                 print ('<li><a href="login.php">Login</a></li>');
             }
             else if (!empty($_SESSION['username'])) {
-                print "<li>Welcome ".$_SESSION['username']."!</li>";
                 print ('<li><a href="createNewAccount.php">Create Staff Account</a></li>');
                 print '<li><a href="logout.php">Logout</a></li>';
             }

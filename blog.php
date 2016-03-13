@@ -2,29 +2,28 @@
     session_start(); 
     require '../blog-api/bloggenerator.php';
     $blogGen = new BlogGenerator(new PDO("mysql:dbname=twisted_vanilla;host=localhost:8889;","root","root"));
+    $blogGen->validateCreatePostSection();
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <?php
             require_once 'scripts/defaultPageFunctions.php';
-            $page_details = new PageDetails("Twisted Blog");
-            $page_details->setDefaultHead();
+            $pageDetails = new PageDetails("Twisted Blog");
+            $pageDetails->setDefaultHead();
         ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <?php
-            $page_details->createDefaultBodyTop();
+            $pageDetails->createDefaultBodyTop();
         ?>
         <?php 
             $blogGen->printEditPostSection();
             $blogGen->printCreatePostSection();
-            $blogGen->printAllPosts();
-            $blogGen->printMostRecentPostSection();
         ?>
         <?php
-            $page_details->createDefaultBodyBottom();
+            $pageDetails->createDefaultBodyBottom();
         ?>
     </body>
 </html>
