@@ -1,4 +1,3 @@
-<!-- Author: Elisabeth Long -->
 <?php
     session_start();
     require 'scripts/sessionFunctions.php';
@@ -28,6 +27,7 @@
                 
         if ($errorFound == false) {
             if (checkDetails($username, $password) == true) {
+                closeLoginSession();
                 createLoginSession($username);
                 redirect("index.php");
             }

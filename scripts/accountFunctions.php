@@ -18,9 +18,9 @@
 
     function getExistingUserDetails($username) {
         try {
-            $db = new PDO("mysql:dbname=animal_sanctuary;host=localhost:8889;","root","root");
+            $db = new PDO("mysql:dbname=twisted_vanilla;host=localhost:8889;","root","root");
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $rows = $db->query("SELECT * FROM User WHERE userID='$username'");
+            $rows = $db->query("SELECT * FROM User WHERE username='$username'");
             return $rows;
         }
         catch (PDOException $ex) {
@@ -44,9 +44,9 @@
         
     function postNewUserDetails($username, $password, $staff) {
         try {
-            $db = new PDO("mysql:dbname=animal_sanctuary;host=localhost:8889;","root","root");
+            $db = new PDO("mysql:dbname=twisted_vanilla;host=localhost:8889;","root","root");
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $db->exec("INSERT INTO User (userID, staff, password) VALUES ('$username', '$staff', '$password')");
+            $db->exec("INSERT INTO User (username, password) VALUES ('$username', '$password')");
             return true;
         }
         catch (PDOException $ex) {
@@ -65,7 +65,7 @@
             $validUsername = false;
             $validPassword = false;
             
-            if (strcmp($row['userID'], $username) == 0) {
+            if (strcmp($row['username'], $username) == 0) {
                 $validUsername = true;
             }
             
