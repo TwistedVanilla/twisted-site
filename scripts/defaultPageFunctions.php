@@ -6,7 +6,7 @@
         
         function __construct($title) {
             $this->title = $title;
-            $this->siteTitle = "Twisted Vanilla";
+            $this->siteTitle = "twisted vanilla";
         }
         
         function set_default_head() {
@@ -49,7 +49,7 @@
 
         function create_default_header() {
             print '<header class="header">
-                <h1>Twisted Vanilla</h1>
+                <h1>TWISTED VANILLA</h1>
                 <p>'.$this->title.'</p>
             </header>';
         }
