@@ -55,7 +55,7 @@
         }
         
         function createDefaultFooter() {
-            print '<footer>
+           print '<footer>
                 <ul>
                     <li>Copyright © TwistedVanilla 2016</li>
                 </ul>
