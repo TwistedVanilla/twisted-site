@@ -13,6 +13,9 @@
         <?php
             $page_details->createDefaultBodyTop();
         ?>
+                <main>
+            <h1>Plugin Development</h1>
+        </main>
         <?php
             $page_details->createDefaultBodyBottom();
         ?>
