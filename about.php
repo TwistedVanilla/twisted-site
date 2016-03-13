@@ -7,6 +7,7 @@
             $page_details = new PageDetails("About");
             $page_details->setDefaultHead();
         ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <?php

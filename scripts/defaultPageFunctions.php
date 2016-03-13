@@ -34,7 +34,6 @@
         function createDefaultHeader() {
             print '<header class="header">
                 <h1>TWISTED VANILLA</h1>
-                <p>'.$this->title.'</p>
             </header>';
         }
         
@@ -58,7 +57,7 @@
         function createDefaultFooter() {
             print '<footer>
                 <ul>
-                    <li>Copyright © TwistedVanilla</li>
+                    <li>Copyright © TwistedVanilla 2016</li>
                 </ul>
             </footer>';
         }
