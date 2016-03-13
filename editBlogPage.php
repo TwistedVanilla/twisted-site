@@ -1,14 +1,10 @@
-<?php 
-    session_start(); 
-    require_once 'blog-api/bloggenerator.php';
-    $blogGen = new BlogGenerator(new PDO());
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
     <head>
         <?php
             require_once 'scripts/defaultPageFunctions.php';
-            $page_details = new PageDetails("Twisted Blog");
+            $page_details = new PageDetails("Edit Blog Page");
             $page_details->set_default_head();
         ?>
     </head>
@@ -16,12 +12,7 @@
         <?php
             $page_details->create_default_body_top();
         ?>
-        <main>
-            <h1>Twisted Vanilla Blog</h1>
-        </main>
-        <?php 
-            $blogGen.printAllPosts();
-        ?>
+        
         <?php
             $page_details->create_default_body_bottom();
         ?>

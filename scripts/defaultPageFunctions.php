@@ -68,7 +68,6 @@
         function create_default_footer() {
             print '<footer>
                 <ul>
-                    <li><a href="bethlong.blog.com">Website Design: Elisabeth Long</a></li>
                     <li>Copyright: TwistedVanilla, Elisabeth Long</li>
                 </ul>
             </footer>';
