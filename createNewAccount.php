@@ -43,7 +43,7 @@
         }
         
         if ($errorFound == false) {
-            if (postNewUserDetails($username, $password1, $staff)) {
+            if (postNewUserDetails($username, $password1)) {
                 create_login_session($username);
                 redirect("index.php");
             }

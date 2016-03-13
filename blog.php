@@ -17,16 +17,6 @@
         <?php
             $page_details->createDefaultBodyTop();
         ?>
-        <section class='$title_post'>
-            <form method="post" action="<?php echo htmlspecialchars('$_SERVER[PHP_SELF]');?>">
-                <label>Title: <input type='text' name='title' value='$this->title'/></label>
-                <label>Description: <textArea name='description'>$this->description</textArea></label>");
-                <label>Date Submitted: <input type='datetime' name='dateTime'/>$this->dateMade</label>
-                <label class='err'>$this->error</label>
-                <input type='submit'/>
-                <input type='hidden' name='submitted' value='true'/>
-            </form>
-        </section>
         <?php 
             $blogGen->printEditPostSection();
             $blogGen->printCreatePostSection();

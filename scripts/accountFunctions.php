@@ -42,7 +42,7 @@
         return $usernameExists;
     }
         
-    function postNewUserDetails($username, $password, $staff) {
+    function postNewUserDetails($username, $password) {
         try {
             $db = new PDO("mysql:dbname=twisted_vanilla;host=localhost:8889;","root","root");
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -61,19 +61,26 @@
         
         $rows = getExistingUserDetails($username);
         
+        
         foreach ($rows as $row) {
             $validUsername = false;
             $validPassword = false;
             
+            echo $row['username'];
+            echo $row['password'];
+            
             if (strcmp($row['username'], $username) == 0) {
                 $validUsername = true;
+                echo "ReachedUser";
             }
             
             if (strcmp($row['password'], $password) == 0) {
                 $validPassword = true;
+                echo "ReachedPassword";
             }
                 
             if ($validUsername && $validPassword) {
+                echo "Reached";
                 return true;
             }
             

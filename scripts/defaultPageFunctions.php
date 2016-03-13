@@ -25,6 +25,7 @@
         
         function setDefaultStylsheet() {
             print '<link type="text/css" rel=stylesheet href="stylesheets/stylesheet.css"/>';
+            print ('<meta charset="UTF-8"/>');
         }
         
         function setDefaultPageTitle() {
