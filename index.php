@@ -5,12 +5,12 @@
         <?php
             require_once 'scripts/defaultPageFunctions.php';
             $page_details = new PageDetails("Welcome");
-            $page_details->set_default_head();
+            $page_details->setDefaultHead();
         ?>
     </head>
     <body>
         <?php
-            $page_details->create_default_body_top();
+            $page_details->createDefaultBodyTop();
         ?>
         <main>
             <h1>Adopt Today!</h1>
@@ -34,7 +34,7 @@
             <p>View All Animals</p>
         </aside>
         <?php
-            $page_details->create_default_body_bottom();
+            $page_details->createDefaultBodyBottom();
         ?>
     </body>
 </html>

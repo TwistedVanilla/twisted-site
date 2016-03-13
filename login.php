@@ -1,7 +1,7 @@
 <!-- Author: Elisabeth Long -->
 <?php
-    require 'scripts/sessionFunctions.php';
     session_start();
+    require 'scripts/sessionFunctions.php';
 
     $formErr = "";
     $unenteredUsernameField = "Please enter a username.";        
@@ -45,12 +45,12 @@
 <html>
     <head>
         <?php
-            $pageDetails->set_default_head();
+            $pageDetails->setDefaultHead();
         ?>
     </head>
     <body>
         <?php
-            $pageDetails->create_default_body_top();
+            $pageDetails->createDefaultBodyTop();
         ?>
         <section>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
@@ -62,7 +62,7 @@
             </form>
         </section>
         <?php
-            $pageDetails->create_default_body_bottom();
+            $pageDetails->createDefaultBodyBottom();
         ?>
     </body>
 </html>
