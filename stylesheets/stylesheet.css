@@ -140,7 +140,7 @@ main p {
 }
 main {
     background-color: #400000;
-    padding: 0
+    padding-bottom: 5px;
 }
 
 article {

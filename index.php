@@ -23,7 +23,7 @@
                     <h1>New custom and community made plugins available within the server!</h1>
                     <p>Twisted Vanilla is proud to announce new community made plugins which have been developed by Aston Computer Science Society (ACSS) Dev Team members!</p>
                     <p><em>Adam Woollen</em> and <em>Aaron Tello-Wharton</em> have been hard at work developing new experiences to enhance your experience within Minecraft. The plugin Bounty has already been a huge success within the server; looking to build upon this success, a Bailiff plugin to get players out of debt as well as a BombDefusal plugin which can diffuse TNT will be added to the server in due course.</p>
-                    <p>It's an exciting time to be a Twisted Vanilla player. Stay tuned for more updates coming shortly! Click here to view a list of current plugins, as well as their source code.</p>
+                    <p>It's an exciting time to be a Twisted Vanilla player. Stay tuned for more updates coming shortly! Click <u><a href="plugins.php">here</a></u> to view a list of current plugins, as well as their source code.</p>
                     <img src="images/12744701_1110636808967940_812136546015275135_n.jpg" alt="It's happening.aaron" height="150" width="300">
                 </article>
                 <article id="right">
@@ -36,7 +36,6 @@
                 </article>
             </section>
         </section>
-        
         <?php
             $page_details->createDefaultBodyBottom();
         ?>
