@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.1;
 }
 ol, ul {
 	list-style: none;
@@ -47,11 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-/* Elisabeth Long, longem */
 /* Defaults */
 body {
     background-color: #7f5200;
-    font-family: Gill Sans, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 600;
     font-size: 14px;
     position: relative;
@@ -84,7 +83,7 @@ nav .login_bar {
 nav ul {
     margin: 0% 5%;   
 }
-nav ul li, footer ul li {
+nav ul li{
     padding: 0% 1%;
     display: inline-block;
     font-size: 16px;
@@ -96,9 +95,11 @@ footer {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding: 1%;
+    padding: 0.5%;
     text-align: center;
-    background-color: #000000;
+    background-color: #400000;
+    font-size: 12px;
+    
 }
 
 header {
@@ -128,14 +129,24 @@ article h1 {
 main p, article p {
     padding-top: 1%;
     margin: 0% 2%;
+    line-height: 1.4;
 }
 
 main h1 {
     font-size: 30px;
+    text-align: center;
 }
 main p {
     font-size: 18px;
     margin: 0% 2%;
+    text-align: center;
+}
+
+article {
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+    height: 100%;
 }
 
 aside {

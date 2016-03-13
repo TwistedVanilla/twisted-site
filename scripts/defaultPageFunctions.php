@@ -68,7 +68,7 @@
         function create_default_footer() {
             print '<footer>
                 <ul>
-                    <li>Copyright: TwistedVanilla, Elisabeth Long</li>
+                    <li>Copyright © TwistedVanilla</li>
                 </ul>
             </footer>';
         }
