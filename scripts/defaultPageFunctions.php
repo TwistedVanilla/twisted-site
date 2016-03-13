@@ -15,8 +15,8 @@
         }
         
         function createDefaultBodyTop() {
-            $this->createDefaultHeader();
             $this->createDefaultNavBar();
+            $this->createDefaultHeader();
         }
         
         function createDefaultBodyBottom() {
