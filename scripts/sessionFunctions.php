@@ -1,4 +1,3 @@
-<!-- Author: Elisabeth Long -->
 <?php
     require 'accountFunctions.php';
 

@@ -4,8 +4,8 @@
     session_start();
     
     $staff = false;
-    if (!empty($_SESSION['isStaff'])) {
-        $staff = $_SESSION['isStaff'];
+    if (empty($_SESSION['username'])) {
+        redirect('index.php');
     }
 
     $usernameErr = "";
@@ -58,9 +58,6 @@
             require_once 'scripts/defaultPageFunctions.php';
             if ($staff) {
                 $page_details = new PageDetails("Create Staff Account");
-            }
-            else {
-                $page_details = new PageDetails("Create New Account");
             }
             $page_details->setDefaultHead();
         ?>
