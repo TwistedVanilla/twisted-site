@@ -63,7 +63,6 @@ em {
 h1, strong {
     font-weight:bold;
     color: #ffa500;
-    font-variant: uppercase;
     font-size: 14px;
 }
 a {
@@ -73,7 +72,7 @@ a {
 
 /* Navigation and footers bars */
 nav {
-    padding: 1% 0%;
+    padding: 0.5% 0%;
     background-color: #400000;
     text-align: center;
 }
@@ -103,12 +102,12 @@ footer {
 }
 
 header {
-    padding: 1%;
+    padding: 1px;
     background-color: #000304;
     text-align: center;
 }
 header h1 {
-    margin: -% 0%;
+    margin: 0% 0%;
     font-size: 70px;
 }
 header p {
@@ -116,11 +115,6 @@ header p {
     margin: 0% 3%;
     font-size: 40px;
     text-align: center;
-}
-
-main, article {
-    margin: 0% 5%;
-    padding-top: 2%;
 }
 article h1 {
     padding-top: 3%;
@@ -135,30 +129,38 @@ main p, article p {
 main h1 {
     font-size: 30px;
     text-align: center;
+    padding-top: 5px;
 }
 main p {
     font-size: 18px;
     margin: 0% 2%;
     text-align: center;
+    padding-top: 10px
+}
+main {
+    background-color: #400000;
+    padding: 0
 }
 
 article {
     display: table-cell;
-    text-align: center;
+    text-align: center;   
     width: 50%;
     height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    
 }
 
-aside {
-    background-color: black;
-    margin: 2% 5%;
-    float: right;
-    width: 100px;
+#container{
+    display: flex;
+    align-items: center;
+justify-content: center;
+}#left{
+    margin-left: auto;
+}#right{
+    margin-right: auto;
 }
-aside h1 {
-    margin: 5%, 0%;
-}
-
 
 form {
     width: 10%;
